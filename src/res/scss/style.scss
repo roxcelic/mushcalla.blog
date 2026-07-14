@@ -1,0 +1,22 @@
+// imports
+// @use './';
+
+// basics
+html, body {
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+
+    background-color: black;
+}
+
+// the main object
+main {}
+
+// text
+p, li, ul, h1, h2, h3, h4, h5, h6, a {
+    color: white;
+
+    font-family: "Pixelify Sans", sans-serif;
+}
