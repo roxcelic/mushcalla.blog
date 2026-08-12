@@ -1,0 +1,35 @@
+#blogBox {
+    max-width: 500px;
+    width: 70vw;
+    max-height: 250px;
+    min-height: 100px;
+
+    border: solid 1.5px pink;
+
+    background-color: black;
+
+    overflow: scroll;
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .blogItem {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+
+        &:hover {
+            background-color: rgb(179, 0, 45);
+
+            & *{
+                color: black !important;
+            }
+        }
+
+        & *{
+            color: white !important;
+        }
+    }
+}

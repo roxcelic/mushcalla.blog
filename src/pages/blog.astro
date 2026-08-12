@@ -1,0 +1,18 @@
+---
+// components
+import Layout from '../Layouts/astro/main.astro';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+---
+
+<Layout title='blog' desc='ill be posting some bs here...'>
+    <p>please select a blog post youre interested in</p>
+    <div id="blogBox">
+        {allPosts.map((post: any) => 
+            <a href={post.url}><div class="blogItem">
+                <div class="itemName blogStyleRemover">{post.frontmatter.title}</div>
+                <div class="itemDate blogStyleRemover">{post.frontmatter.date}</div>
+                <div class="itemAuthor blogStyleRemover">{post.frontmatter.author}</div>
+            </div></a>
+        )}
+    </div>
+</Layout>

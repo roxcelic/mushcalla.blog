@@ -2,6 +2,9 @@
 interface Props { title: string; desc: string; }
 const { desc, title } = Astro.props;
 
+import Menu from '../Comp/menu.astro';
+import Footnote from '../Comp/footnote.astro';
+
 // scss
 import '../res/scss/style.scss'
 ---
@@ -38,10 +41,25 @@ import '../res/scss/style.scss'
 	</head>
 	<body>
         <main>
+            <Menu />
+
+            <div class="border-bottom-left" />
+            <div class="border-bottom-right" />
+            <div class="border-top-left" />
+            <div class="border-top-right" />
             <!--page specific content-->
             <!------------------------->
-            <slot />
+            <content>
+
+                <div style="display: flex;">
+                    <h1 style="margin: 0;">{title}</h1><p style="margin: 0; align-self: center; margin-left: 15px;"> --- {desc}</p>
+                </div>
+
+                <hr>
+                <slot />
+            </content>
             <!------------------------->
+            <Footnote />
         </main>
 	</body>
 </html>

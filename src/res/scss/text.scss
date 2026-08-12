@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6, p, li, textarea, ul {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+        text-shadow: 0px 0px 8px;  
+}
+
+p, li, textarea, ul {
+    opacity: 0.8;
+
+
+    text-shadow: 0px 0px 4px;
+    transition: all ease-in-out 0.3s;
+    
+    &:hover {
+        text-shadow: 0px 0px 10px;
+        opacity: 1;
+    }
+}
+
+a {
+    color: rgb(255, 172, 248);
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p, li, ul, marquee { // stops hover effects on mobile
+        opacity: 0.9 !important;
+        text-shadow: 0px 0px 5px;
+    }
+}

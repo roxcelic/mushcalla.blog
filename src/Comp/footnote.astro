@@ -1,0 +1,32 @@
+---
+
+---
+<div id="footnote">
+    <p id="footnoteText">
+        loading
+    </p>
+    <script is:inline>
+        let getSongData = async (hi) => {
+            try {
+                let response = await fetch(`https://api.roxie.workers.dev`);
+                let data = await response.json();
+                return data;
+            } catch (e) {
+                return {};
+            }
+        };
+
+        let displayData = async () => {
+            let songInfo = await getSongData();
+            let textDisplay = document.getElementById("footnoteText");
+
+            if (Object.keys(songInfo).length != 0) {
+                textDisplay.innerText = `Roxy is listening to ${songInfo.name} by ${artist["#text"]}`;
+            } else {
+                textDisplay.innerText = `website made by Roxy`;
+            }
+        };
+
+        displayData();
+    </script>
+</div>

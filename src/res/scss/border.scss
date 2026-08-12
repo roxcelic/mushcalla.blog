@@ -1,0 +1,60 @@
+// border elements
+.border-bottom-left {
+  position: absolute;
+  display: block;
+
+  bottom: 10vh;
+  left: 5vh;
+
+  height: 5vh;
+  width: 5vh;
+
+  border-radius: 0 0 0 5px;
+  border-left: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+.border-bottom-right {
+  position: absolute;
+  display: block;
+
+  bottom: 10vh;
+  right: 5vh;
+
+  height: 5vh;
+  width: 5vh;
+
+  border-radius: 0 0 5px 0;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+.border-top-left {
+  position: absolute;
+  display: block;
+
+  top: 5vh;
+  left: 5vh;
+
+  height: 5vh;
+  width: 5vh;
+
+  border-radius: 5px 0 0 0;
+  border-left: solid 1px white;
+  border-top: solid 1px white;
+}
+
+.border-top-right {
+  position: absolute;
+  display: block;
+
+  top: 5vh;
+  right: 5vh;
+
+  height: 5vh;
+  width: 5vh;
+
+  border-radius: 0 5px 0 0;
+  border-right: solid 1px white;
+  border-top: solid 1px white;
+}
