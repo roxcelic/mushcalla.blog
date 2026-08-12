@@ -1,0 +1,8 @@
+{
+	"name": "mushcalla.blog",
+	// Set this to today's date
+	"compatibility_date": "2026-08-12",
+	"assets": {
+		"directory": "./dist"
+	}
+}
