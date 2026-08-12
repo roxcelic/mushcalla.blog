@@ -8,7 +8,7 @@
     <script is:inline>
         let getSongData = async (hi) => {
             try {
-                let response = await fetch(`https://api.roxie.workers.dev`);
+                let response = await fetch(`https://api.mushcalla.blog`);
                 let data = await response.json();
                 return data;
             } catch (e) {
@@ -21,7 +21,7 @@
             let textDisplay = document.getElementById("footnoteText");
 
             if (Object.keys(songInfo).length != 0) {
-                textDisplay.innerText = `Roxy is listening to ${songInfo.name} by ${artist["#text"]}`;
+                textDisplay.innerText = `Roxy is listening to ${songInfo.name} by ${songInfo.artist["#text"]}`;
             } else {
                 textDisplay.innerText = `website made by Roxy`;
             }
