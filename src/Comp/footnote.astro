@@ -21,7 +21,12 @@
             let textDisplay = document.getElementById("footnoteText");
 
             if (Object.keys(songInfo).length != 0) {
+                console.log(songInfo);
                 textDisplay.innerText = `Roxy is listening to ${songInfo.name} by ${songInfo.artist["#text"]}`;
+                textDisplay.addEventListener("click", () => {
+                    if (document.body.style.backgroundImage == "") document.body.style.backgroundImage = `url('${songInfo.image[3]["#text"]}')`;
+                    else document.body.style.backgroundImage = "";
+                });
             } else {
                 textDisplay.innerText = `website made by Roxy`;
             }

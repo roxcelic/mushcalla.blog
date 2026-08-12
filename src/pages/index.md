@@ -28,7 +28,8 @@ Isnt it cool?
 - interests
     - Evangelion
     - Library of ruina
-        - and other project moon games, [Lobotomy Corporation, Limbus Company]
+        - <div id="lobButton" style="display:flex;"> Lobotomy Corporation </div>
+        - limbus company
     - Attack on Titan
     - The Apothocary Diaries 
 - Education
@@ -46,3 +47,10 @@ Isnt it cool?
 
 Thank you for reading and I hope you enjoy the rest of my website!
 (I will be pushing this without checking anything)
+
+<div id="lobManager">
+    <div class="border-bottom-left lobVer" style="background-Image: url('/lob/bl.png');bottom:10px;left:0;"></div>
+    <div class="border-bottom-right lobVer" style="background-Image: url('/lob/br.png');bottom:10px;right:20px;"></div>
+    <div class="border-top-left lobVer" style="background-Image: url('/lob/tl.png');top:0;left:0;"></div>
+    <div class="border-top-right lobVer" style="background-Image: url('/lob/tr.png');top:10px;right:20px;"></div>
+</div>

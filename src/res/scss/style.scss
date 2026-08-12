@@ -6,6 +6,9 @@
 @use './blog.scss';
 
 // basics
+body {
+    background-color: black;
+}
 html, body {
     padding: 0;
     margin: 0;
@@ -15,8 +18,6 @@ html, body {
     color: white;
     font-family: "Pixelify Sans", sans-serif;
 
-    background-color: black;
-    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
 }
