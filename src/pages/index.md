@@ -5,8 +5,9 @@ desc: '"a machine must behave as a machine"'
 ---
 # hey,
 Im Roxy and this is my website,
-
 Isnt it cool? 
+
+Im doing so much recently this is just a slightly imrpoved copy of my last website (although i prefer that one i think) so im going to be remaking this again eventually i just need to throw this out there...
 
 ## About me
 - My names
