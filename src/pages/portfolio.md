@@ -16,7 +16,7 @@ desc: 'an online portfolio for roxy'
         - [siteV2](#sitev2)
         - [siteV1](#sitev1)
     - [peapod](#peapod)
-- [libraries](#librarys)
+- [libraries](#libraries)
     - [eevee](#eevee)
 
 > `This website is also built entirely by me in astro`
@@ -72,7 +72,7 @@ This is a demo of the shader remake, the lines are the edge detection the bright
 
 ![image](/content/peapod/image.png)
 
-# librarys
+# libraries
 ## eevee
 > `eevee is a full revamp of the unity input system, it is fully documented and easy to install. All you need to do is put it in your project and it allows for dynamic inputs (re-bindable at runtime) and 3 styles of input checking. It has keyboard and controller support`
 - [github.com/roxcelic/eevee](https://github.com/roxcelic/eevee)
