@@ -30,7 +30,16 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         let data = await response.json();
 
         if (data.image == null) {
-            spotify.forEach(el => {el.className = "random";});
+            spotify.forEach(el => {
+                el.children[0].children[0].innerText = ``;
+            
+                let image = info.image[Math.floor(Math.random() * info.image.length)];
+                while (info.used.includes(image)) image = info.image[Math.floor(Math.random() * info.image.length)];
+                info.used.push(image);
+
+                el.children[0].style.backgroundImage = `url('/images/${image}')`;
+            });
+            
             return;
         };
 
