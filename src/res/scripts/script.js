@@ -25,7 +25,7 @@ let editByClass = async (name, run) => {
 }
 
 document.addEventListener("DOMContentLoaded", async (event) => {
-    editByClass("spotify", async (spotify) => {
+    await editByClass("spotify", async (spotify) => {
         let response = await fetch(`https://api.mushcalla.blog`);
         let data = await response.json();
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         });
     });
 
-    editByClass("random", (random) => {
+    await editByClass("random", (random) => {
         random.forEach(el => {
             el.children[0].children[0].innerText = ``;
             
