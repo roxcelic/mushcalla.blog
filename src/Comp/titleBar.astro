@@ -1,0 +1,18 @@
+---
+interface Props { title: string; desc: string; }
+const { title, desc } = Astro.props;
+---
+
+<div class="titleBarName">
+    <a href="/">
+        <h1>Mushcalla.blog / {title}</h1>
+    </a>
+    <p>{desc}</p>
+</div>
+
+<div class="titleBar">
+    <a href="/"><p>home</p></a>
+    <a href="/blog"><p>blog</p></a>
+    <a href="/cv"><p>cv</p></a>
+    <a href="/portfolio"><p>portfolio</p></a>
+</div>       

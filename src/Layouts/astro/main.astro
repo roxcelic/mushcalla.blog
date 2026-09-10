@@ -1,0 +1,17 @@
+---
+interface Props { title: string; desc: string; }
+const { desc, title } = Astro.props;
+
+import Layout from '../full.astro';
+---
+
+<Layout desc={desc} title={title}>
+    <!--Astro layout data-->
+    <!--------------------->
+
+    <main>
+        <h3 class="mobile">this website is made for desktop, you will have a better experience switching to a desktop device</h3>
+        <slot />
+    </main>
+    <!--------------------->
+</Layout>

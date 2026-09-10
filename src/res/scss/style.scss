@@ -1,0 +1,174 @@
+// colors
+$MainColor: #730c1e;
+$AltColor: #210207;
+$SubColor: #480415;
+$SpareColor: #140f17;
+$TextColor: rgb(159, 154, 154);
+
+// basic styles
+
+a {
+  text-decoration: none;
+  color: pink;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+html {
+  background-color: $SpareColor;
+
+  padding: 0;
+  margin: 0;
+
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+
+  background-color: rgba($AltColor, 0.5);
+
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+
+  backdrop-filter: blur(13px);
+  
+  overflow: hidden;
+}
+
+// text
+h1, h2, h3, h4, h5, h6, p, li, ul {
+  color: $MainColor;
+  font-family: "Pixelify Sans", sans-serif;
+
+  width: fit-content;
+
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  background-color: $AltColor;
+}
+
+p, li, ul {
+  color: $TextColor;
+}
+
+// positioning
+main {
+  position: relative;
+  display: block;
+
+  left: -15%;
+  top: 50px;
+  
+  width: 80%;
+  max-width: 750px;
+
+  height: 75%;
+  max-height: 500px;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  margin: auto auto;
+}
+
+.box {
+  position: absolute;
+  display: grid;
+
+  right: 5vw;
+  top: 10vh;
+
+  width: 400px;
+  height: 80vh;
+
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 25% 25% 25%;
+  row-gap: 5%;
+  column-gap: 5%;
+
+  .item {
+    border: solid 2.5px $AltColor;
+    
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: $SpareColor;
+    background-size: cover;
+    background-position: center;
+
+  }
+}
+
+.box > a:nth-child(3n - 2) {
+  grid-column:span 2;
+}
+
+.titleBarName {
+  position: absolute;
+  display: block;
+
+  top: 2.5vh;
+  left: 10vw;
+
+  width: fit-content;
+  height: 40px;
+
+  background-color: $SpareColor;
+
+  border: solid 2.5px $AltColor;
+
+  & h1{
+    color: $TextColor;
+    background: none !important;
+  }
+}
+
+.titleBar {
+  position: absolute;
+  display: flex;
+
+  top: 4vh;
+
+  & a p{
+    color: $TextColor;
+    background: none !important; 
+  }
+}
+
+img {
+  position: relative;
+  display: block;
+
+  max-width: 100%;
+
+  border: white solid 1px;
+  border-radius: 5px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.mobile, .hidden {display: none;}
+
+// overrides
+@media screen and (width <= 1300px) {
+  .box {display: none !important;}
+  main {left: 0; top: -5vh;}
+  .titleBarName {display: none !important;}
+  .mobile {display: block;} 
+}

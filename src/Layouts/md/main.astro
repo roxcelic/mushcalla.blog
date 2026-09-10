@@ -1,0 +1,15 @@
+---
+const { frontmatter } = Astro.props;
+
+import Layout from '../full.astro';
+---
+
+<Layout desc={frontmatter.desc} title={frontmatter.title}>
+    <!--Markdown layout data-->
+    <!--------------------->
+    <main>
+        <h3 class="mobile">this website is made for desktop, you will have a better experience switching to a desktop device</h3>
+        <slot />
+    </main>
+    <!--------------------->
+</Layout>
