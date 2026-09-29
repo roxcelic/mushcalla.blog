@@ -28,3 +28,6 @@ oh and hopefully i should be moved out by the end of the week like fingers cross
 Also it was mine and my girlfriends 6 month anniversery yesterday that was so much fun, i got her flowers and wrote her a love letter and she got me chocolates in the shapes of little hearts and stuff i wanted to try. 
 
 This is the end goodbye i hope you enjoy the new wallpaper, thank you project moon.
+
+# RQ AHHH
+this is an edit just after i posted this, i removed the cv page i dont need that now and it was ugly.
