@@ -11,7 +11,8 @@ let info = {
         'IMG_3650.HEIC',
         'IMG_3663.HEIC',
         'IMG_3708.JPG',
-        'IMG_3838.JPG'
+        'IMG_3838.JPG',
+        '287398174891.jpg'
     ],
     used: []
 }
